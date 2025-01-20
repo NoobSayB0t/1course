@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/laba13/task1.xsl"?>
+<items>
+    <head>
+        <title>Название товара</title>
+        <byn>Цена</byn>
+    </head>
+    <item>
+        <name>Шарф</name>
+        <price>30</price>
+    </item>
+
+    <item>
+        <name>Штаны</name>
+        <price>60</price>
+    </item>
+
+    <item>
+        <name>Пальто</name>
+        <price>500</price>
+    </item>
+
+    <item>
+        <name>Перчатки</name>
+        <price>40</price>
+    </item>
+
+    <item>
+        <name>Худи</name>
+        <price>90</price>
+    </item>
+</items>  

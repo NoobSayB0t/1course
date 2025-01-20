@@ -1,0 +1,3 @@
+﻿  zad4(start).cpp
+C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba4\zad4(start)\zad4(start).cpp(4,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  zad4(start).vcxproj -> C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba4\x64\Debug\zad4(start).exe

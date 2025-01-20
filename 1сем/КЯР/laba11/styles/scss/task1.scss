@@ -1,0 +1,128 @@
+@import './function';
+aside {
+    width: 40%;
+    margin: 10px;
+    padding: 5px;
+    background-color: $alt-color;
+    h2{
+        @include h2-style;
+    }
+    .container{
+        @include display-flex;
+        margin: 5px;
+        img{
+            width: 30%;
+            &:hover{
+
+                transform: scale(110%);
+            }
+        }
+        p{
+            @extend %p-style;
+            border: 0;
+            margin: 5px;
+            padding: 5px;
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 5px 0;
+    height: 8vh;
+    text-align: center;
+    background-color: $alt-color;
+    color: transparentize($main-text-color, $amount: 0.3);
+    text-align: center;
+}
+
+.form-container {
+    background-color: $alt-color;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        color: $text-color;
+        font-size: $font-h;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+         display: flex;
+         flex-direction: column; 
+        label {
+            margin-bottom: 5px;
+            color: $text-color;
+            font-weight: bold;
+            font-size: $font-p;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 5px;
+            border: 3px solid $detail-color;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+            &:focus {
+                border-color: $detail-color;
+                outline: none;
+            }
+        }
+        textarea {
+            resize: vertical;
+
+        }
+    }
+
+    .submit-btn {
+        background-color: $detail-color;
+        color: $main-text-color;
+        padding: 7px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: $font-p;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: darken($detail-color, 10%);
+        }
+    }
+}
+
+.main-container{
+    @include display-flex;
+    height: 80vh;
+}
+main{
+    margin: 5px;
+    padding: 5px;
+    width: 68%;
+   /*  background-color: $alt-color ; */
+    @include display-flex;
+    flex-wrap: wrap;
+    h2{
+        @include h2-style;
+        
+    }
+    p{
+        width: 30%;
+        @extend %p-style;
+    }
+    img{
+        width: 24%;
+        &:hover{
+
+            transform: scale(110%);
+        }
+    };
+}

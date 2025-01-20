@@ -1,0 +1,24 @@
+items {
+    display: block;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+title, byn {
+    display: table-cell;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    background: rgb(172, 45, 45);
+}
+
+head, item {
+    display: table-row;
+}
+
+name, price {
+    display: table-cell;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+}

@@ -1,0 +1,5 @@
+﻿  dop(var_13_par).cpp
+C:\Users\USER\Desktop\ОАИП\lab9\dop(var_13_par)\dop(var_13_par).cpp(11,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\USER\Desktop\ОАИП\lab9\dop(var_13_par)\dop(var_13_par).cpp(13,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\USER\Desktop\ОАИП\lab9\dop(var_13_par)\dop(var_13_par).cpp(17,12): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  dop(var_13_par).vcxproj -> C:\Users\USER\Desktop\ОАИП\lab9\x64\Debug\dop(var_13_par).exe

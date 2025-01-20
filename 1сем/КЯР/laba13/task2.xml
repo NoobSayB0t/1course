@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/laba13/task2.xsl"?>
+<students>
+
+    <student>
+        <surname>Короткевич</surname>
+        <oaip>10</oaip>
+        <opi>4</opi>
+        <kyar>8</kyar>
+    </student>
+
+    <student>
+        <surname>Блющ</surname>
+        <oaip>6</oaip>
+        <opi>4</opi>
+        <kyar>3</kyar>
+    </student>
+
+    <student>
+        <surname>Глезов</surname>
+        <oaip>8</oaip>
+        <opi>9</opi>
+        <kyar>9</kyar>
+    </student>
+
+    <student>
+        <surname>Бразовский</surname>
+        <oaip>1</oaip>
+        <opi>2</opi>
+        <kyar>5</kyar>
+    </student>
+
+    <student>
+        <surname>Мигун</surname>
+        <oaip>6</oaip>
+        <opi>7</opi>
+        <kyar>6</kyar>
+    </student>
+
+    <student>
+        <surname>Заврагин</surname>
+        <oaip>6</oaip>
+        <opi>4</opi>
+        <kyar>5</kyar>
+    </student>
+
+    <student>
+        <surname>Ринейский</surname>
+        <oaip>7</oaip>
+        <opi>6</opi>
+        <kyar>4</kyar>
+    </student>
+
+    <student>
+        <surname>Громыко</surname>
+        <oaip>3</oaip>
+        <opi>2</opi>
+        <kyar>1</kyar>
+    </student>
+
+</students>

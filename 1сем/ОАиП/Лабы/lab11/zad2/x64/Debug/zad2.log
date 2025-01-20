@@ -1,0 +1,3 @@
+﻿  zad2.cpp
+C:\Users\USER\Desktop\ОАИП\lab11\zad2\zad2.cpp(4,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  zad2.vcxproj -> C:\Users\USER\Desktop\ОАИП\lab11\x64\Debug\zad2.exe

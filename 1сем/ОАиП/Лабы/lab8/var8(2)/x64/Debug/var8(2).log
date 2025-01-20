@@ -1,0 +1,4 @@
+﻿  var8(2).cpp
+C:\Users\USER\Desktop\ОПИ\zad1\var8(2)\var8(2).cpp(9,9): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\USER\Desktop\ОПИ\zad1\var8(2)\var8(2).cpp(21,11): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  var8(2).vcxproj -> C:\Users\USER\Desktop\ОПИ\zad1\x64\Debug\var8(2).exe

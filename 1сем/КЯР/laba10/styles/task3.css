@@ -1,0 +1,21 @@
+@import url(/styles/import.css)(max-width: 768px);
+#third {
+    width: 100%;
+}
+
+.imgs {
+    width: 100px;
+}
+
+@media (max-width: 480px) {
+    #nadpis {
+        color: red;
+    }
+}
+
+@media (max-width:1280px) {
+    .imgs{
+        display: block;
+        width: 100%;
+    }
+}

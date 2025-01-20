@@ -1,0 +1,43 @@
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    padding: 0;
+}
+nav {
+    width: 200px;
+    margin: auto;
+}
+#hidenmenu {
+    display: none;
+}
+.menuitem {
+    width: 100px;
+    background-color: #fc8e66;
+    border: 2px dashed;
+    border-top: none;
+    padding: 5px;
+}
+.menuitem:first-child {
+    border: 2px dashed;
+}
+
+.menuitem:hover {
+    background-color: #ffa280;
+}
+
+#mainmenu {
+    display: block;
+    position: relative;
+    background-color: yellow;
+    border: 1px solid;
+    padding: 10px;
+}
+
+#menu:hover #hidenmenu {
+    display: block;
+}

@@ -1,0 +1,7 @@
+﻿  zad1.cpp
+C:\Users\USER\Desktop\ОАИП\lab7\lab7\zad1.cpp(3,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 4 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  lab7.vcxproj -> C:\Users\USER\Desktop\ОАИП\lab7\Release\lab7.exe

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/laba10/styles/task1.css">
+    <link rel="stylesheet" href="/laba10/styles/task2.css">
+    <link rel="stylesheet" href="/laba10/styles/task3.css">
+    <link rel="stylesheet" href="/laba10/styles/link.css" media="(max-width:1280px) and (min-width:768px)">
+    <title>Lab 10</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="menuitems">
+                <h3 class="menulinks">Меню</h3>
+                <span class="menulinks">&#8801;</span>
+            </li>
+            <input type="checkbox" id="menubttn">
+            <li class="menuitems">
+                <a href="#task1" class="menulinks">Задание 1</a>
+            </li>
+            <li class="menuitems">
+                <a href="#nadpisi" class="menulinks">Задание 2</a>
+            </li>
+            <li class="menuitems">
+                <a href="#third" class="menulinks">Задание 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="task1">
+        <div id="head">
+            <h1>Страница</h1>
+        </div>
+        <div id="item1" class="flexitem1">
+            <video src="/laba10/video/1.mp4" controls></video>
+            <video src="/laba10/video/2.mp4" controls></video>
+            <video src="/laba10/video/3.mp4" controls></video>
+        </div>
+        <div id="item2" class="flexitem1">
+            <p>
+                Flexbox-верстка — разметка макетов веб-страниц, которая позволяет автоматически настраивать ширину элементов, находящихся внутри flex-контейнера. Для применения данного способа разметки следует учитывать разделение применяемых свойств на свойства flex-контейнера и свойства flex-элемента.С помощью display: flex; осуществляется преобразование HTML-элемента в flex-контейнер, а элементы находящийся внутри него в flex-элементы. По умолчанию flex-элементы помещаются друг за другом в одной строке. 
+                Свойство flex-flow позволяет выбрать направление отображения элементов в контейнере, а также указать их перенос на следующую строку. Первое значение определяет направление, а второе перенос на следующую строку.Свойство flex-flow является сокращенной записью и содержит значения свойств flex-direction и flex-wrap. Flex-элементы могут размещаться в строке (значение row) или в колонке (значение column). Перенос элементов осуществляется с помощью значения wrap.   
+            </p>
+        </div>
+        <div id="item3" class="flexitem1">
+            <audio src="/laba/10/audio/1.mp3" controls></audio>
+            <audio src="/laba10/audio/2.mp3" controls></audio>
+            <audio src="/laba10/audio/3.mp3" controls></audio>
+        </div>
+    </div>
+
+    <div id="third"></div>
+        <h1 id="nadpis">Галерея</h1>
+        <figure> 
+          <img src="/laba10/img/1.jpg" alt="" class="imgs">
+          <figcaption>Олени</figcaption>
+        </figure>
+        <figure> 
+            <img src="/laba10/img/2.jpg" alt="" class="imgs">
+            <figcaption>Лоси</figcaption>
+          </figure>
+          <figure> 
+            <img src="/laba10/img/3.jpg" alt="" class="imgs">
+            <figcaption>Природа</figcaption>
+          </figure>
+          <figure> 
+            <img src="/laba10/img/4.jpg" alt="" class="imgs">
+            <figcaption>Лес</figcaption>
+          </figure>
+          <figure> 
+            <img src="/laba10/img/5.jpg" alt="" class="imgs">
+            <figcaption>Большой лось</figcaption>
+          </figure>
+          <figure> 
+            <img src="/laba10/img/6.jpg" alt="" class="imgs">
+            <figcaption>Река</figcaption>
+          </figure>
+          <figure> 
+            <img src="/laba10/img/7.jpg" alt="" class="imgs">
+            <figcaption>Слоны</figcaption>
+          </figure>
+          <figure> 
+            <img src="/laba10/img/8.jpg" alt="" class="imgs">
+            <figcaption>Зебры</figcaption>
+          </figure>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+}
+#grad1{
+    background-image: linear-gradient(to bottom, blue , red);
+}
+#grad2{
+    background-image: repeating-linear-gradient(45deg, red 1px, red 8px,blue 8px, blue 16px);
+}
+#grad3{
+    background-image: radial-gradient(yellow, green);
+}
+#grad4{
+    background-image: repeating-radial-gradient(green, green 6px,yellow 8px,yellow 13px);
+}
+#grad5{
+    background-image: radial-gradient(yellow,green,transparent),
+                       linear-gradient(to bottom, blue,purple);
+}

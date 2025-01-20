@@ -1,0 +1,32 @@
+body {
+    background-color: #58b52d;
+}
+aside {
+    float: right;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #303030;
+}
+aside ul {
+    margin: 0;
+    padding: 40px;
+}
+.menuitem {
+    list-style: none;
+    padding: 10px;
+}
+.menulink {
+    text-decoration: none;
+}
+.menulink:link {
+    color: #ff0059;
+}
+.menulink:visited {
+    color: #8B0000;
+}
+.menulink:hover {
+    color: #008000;
+}
+.menulink:active {
+    color: rgb(184, 134, 11);
+}

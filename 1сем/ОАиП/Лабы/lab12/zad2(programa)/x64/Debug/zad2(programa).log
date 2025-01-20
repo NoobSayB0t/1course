@@ -1,0 +1,3 @@
+﻿  zad2(programa).cpp
+C:\Users\USER\Desktop\ОАИП\lab12\zad2(programa)\zad2(programa).cpp(10,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  zad2(programa).vcxproj -> C:\Users\USER\Desktop\ОАИП\lab12\x64\Debug\zad2(programa).exe

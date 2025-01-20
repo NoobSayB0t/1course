@@ -1,0 +1,19 @@
+h1, h2, h3{
+    color: blueviolet; font-family: Monotype Corsiva;
+    text-align: center;
+}
+.selector1{
+    color: red; font-family: 'Times New Roman', Times, serif; font-size:18pt;
+}
+.selector2{
+    color:yellow; font-family: 'Times New Roman', Times, serif; font-size:20pt;
+}
+.selector3{
+    color: green; font-family: 'Times New Roman', Times, serif; font-size: 22pt;
+}
+table th {
+    color: brown;
+}
+th, td{
+    border: 2px solid black;
+}

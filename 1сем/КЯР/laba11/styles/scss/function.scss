@@ -1,0 +1,44 @@
+$text-color: #523634;
+$back-color: #C9A66B;
+$alt-color: #EBDCB2;
+$detail-color: #AF4425;
+$main-text-color: #662E1c;
+$font-h: 2.5em;
+$font-p: 0.7em;
+
+@function set-p-size($h-size) {
+    
+    $p-size: $font-p;
+    @if $h-size > .8em {
+        $p-size: $font-p * 1;
+    }
+    
+    @if $h-size < .7em {
+        $p-size: $font-p * 0.5;
+    }
+
+    @else if $h-size < .3em {
+       $p-size: $font-p * 0.2;
+    }
+
+    @return $p-size;
+}
+
+@mixin display-flex{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin h2-style{
+        font-size: $font-h;
+        width: 100%;
+        padding: 10px 0;
+        color: $main-text-color;
+        text-align: center;
+        border: 1px solid $detail-color;
+}
+%p-style{
+    color: $text-color;
+        border: 1px solid $detail-color;
+        font-size: set-p-size($font-h);
+}
+

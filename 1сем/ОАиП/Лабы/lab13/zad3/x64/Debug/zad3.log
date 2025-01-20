@@ -1,0 +1,4 @@
+﻿  zad3.cpp
+C:\Users\USER\Desktop\ОАИП\lab13\zad3\zad3.cpp(5,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\USER\Desktop\ОАИП\lab13\zad3\zad3.cpp(12,15): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  zad3.vcxproj -> C:\Users\USER\Desktop\ОАИП\lab13\x64\Debug\zad3.exe

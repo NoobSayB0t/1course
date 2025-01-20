@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данные студента</title>
+    <link href="/laba15/styles/task2.css" rel="stylesheet">
+    <script src="/laba15/scripts/task_2.js"></script>
+</head>
+<body>
+    <h1>Данные студента</h1>
+    <form id="studentForm">
+        <p>
+           <label for="name">Имя студента</label>
+           <input type="text" id="name" placeholder="обязательно заполнить"><br>
+        </p>
+        <p>
+           <label for="fathname">Отчество студента</label>
+           <input type="text" id="fathname" placeholder="обязательно заполнить"><br>
+        </p>
+        <p>
+           <label for="surname">Фамилия студента</label>
+           <input type="text" id="surname" placeholder="обязательно заполнить"><br>
+        </p>
+        <p>
+           <label for="email">Адрес почты</label>
+           <input type="text" id="email"><br>
+        </p>
+        <p>
+           <label for="tel">Контактный номер</label>
+           <input type="text" id="tel"><br>
+        </p>
+        <p>
+           <label for="socialNetworks">Какую социальную сеть вы используете?</label><br>
+           <input type="checkbox" id="VK">VK
+           <input type="checkbox" id="Facebook">Facebook
+           <input type="checkbox" id="Instagram">Instagram<br>
+        </p>
+    <p>
+        <label for="faculty">Факультет</label>
+        <select id="faculty">
+            <option value=""></option>
+            <option value="ФИТ">ФИТ</option>
+            <option value="ХТиТ">ХТиТ</option>
+            <option value="ПИМ">ПИМ</option>
+        </select><br>
+    </p>
+    <p>
+        <label for="group">Группа</label>
+        <select id="group">
+            <option value=""></option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br>
+    </p>
+    <p>
+        <label for="course">Курс</label>
+        <select id="course">
+            <option value=""></option>
+            <option value="1">1 курс</option>
+            <option value="2">2 курс</option>
+            <option value="3">3 курс</option>
+            <option value="4">4 курс</option>
+        </select><br>
+        <input type="submit" onclick="event.preventDefault(); displayValues();">
+    </p>
+   </form>
+    <footer id="output"></footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+﻿  zad2.cpp
+C:\Users\USER\Desktop\ОАИП\lab13\zad2\zad2.cpp(6,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\USER\Desktop\ОАИП\lab13\zad2\zad2.cpp(11,17): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\USER\Desktop\ОАИП\lab13\zad2\zad2.cpp(12,17): warning C4129: /: неизвестная escape-последовательность
+C:\Users\USER\Desktop\ОАИП\lab13\zad2\zad2.cpp(15,17): warning C4129: /: неизвестная escape-последовательность
+C:\Users\USER\Desktop\ОАИП\lab13\zad2\zad2.cpp(18,10): warning C4129: /: неизвестная escape-последовательность
+  zad2.vcxproj -> C:\Users\USER\Desktop\ОАИП\lab13\x64\Debug\zad2.exe

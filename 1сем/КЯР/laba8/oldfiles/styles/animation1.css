@@ -1,0 +1,380 @@
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    transition: 300ms;
+}
+
+#img1:hover {
+    transform: scale(.5);
+}
+
+#img2:hover {
+    transform: rotate(45deg);
+}
+
+#img3:hover {
+    transform: translate(50px);
+}
+
+#img4:hover {
+    transform: skew(-20deg);
+}
+
+
+button {
+    border: none;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    background-color: white;
+    transition: 300ms;
+}
+
+#butn1:hover {
+    background-color: black;
+    color: white;
+}
+
+#butn2:hover {
+    border: 5px solid red;
+    outline: 5px solid yellow;
+}
+
+#butn3:hover {
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+}
+
+#butn4:hover {
+    border-left: 5px solid blue;
+    border-right: 5px solid blue;
+}
+
+#butn5:hover {
+    background-image: radial-gradient(yellow, magenta, blue, cyan);
+}
+
+
+
+#image1 {
+    transform:
+        perspective(800px) rotateX(60deg);
+}
+
+#image2 {
+    transform:
+        perspective(800px) rotateY(45deg);
+}
+
+#image3 {
+    transform:
+        perspective(800px) rotateX(60deg);
+}
+
+#image4 {
+    transform:
+        perspective(800px) rotateY(-45deg);
+}
+
+
+
+@keyframes anim4 {
+    from {}
+
+    50% {
+        transform: rotateY(0);
+        filter: invert(0);
+    }
+
+    to {
+        transform:
+            translate(600px) rotateY(0);
+        filter: invert(1);
+    }
+}
+
+@keyframes anim3 {
+    from {}
+
+    50% {
+        transform: rotateY(0);
+        filter: grayscale(0);
+    }
+
+    to {
+        transform:
+            translate(400px) rotateY(0);
+        filter: grayscale(1);
+    }
+}
+
+@keyframes anim2 {
+    from {}
+
+    50% {
+        transform: rotateY(0);
+        filter: blur(0);
+    }
+
+    to {
+        transform:
+            translate(200px) rotateY(0);
+        filter: blur(10px);
+    }
+}
+
+@keyframes anim1 {
+    from {}
+
+    50% {
+        transform: rotateY(0);
+    }
+
+    to {
+        transform: rotateY(0);
+    }
+}
+
+.anim {
+    position: absolute;
+    transform:
+        perspective(700px) rotateY(45deg);
+}
+
+#imgs4 {
+    animation-name: anim4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    left: 90px;
+}
+
+#imgs3 {
+    animation-name: anim3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    left: 60px;
+}
+
+#imgs2 {
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    left: 30px;
+}
+
+#imgs1 {
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+#fifth {
+    margin-top: 300px;
+}
+
+#imags1 {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 3px solid;
+    animation: imgfad 5s linear infinite;
+    background-size: 100%;
+}
+
+@keyframes imgfad {
+    0% {
+        background-image: url(/laba7/image/5task/1.jpg);
+    }
+
+    25% {
+        background-image: url(/laba7/image/5task/2.jpg);
+    }
+
+    50% {
+        background-image: url(/laba7/image/5task/3.jpg);
+    }
+
+    75% {
+        background-image: url(/laba7/image/5task/4.jpg);
+    }
+
+    100% {
+        background-image: url(/laba7/image/5task/5.jpg);
+    }
+}
+
+
+
+
+
+#sixth {
+    margin-top: 600px;
+}
+
+.logo {
+    display: block;
+    border: 2px solid;
+}
+
+@keyframes logo1 {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(200px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+#anim1 {
+    animation: logo1 2s linear infinite;
+}
+
+@keyframes logo2 {
+    0% {
+        transform: translate(0px);
+    }
+
+    50% {
+        transform: translate(100%);
+        border-radius: 100%;
+    }
+
+    100% {
+        transform: translate(0px);
+        border-radius: 0;
+    }
+}
+
+#anim2 {
+    animation: logo2 2s linear infinite;
+}
+
+@keyframes logo3 {
+    0% {
+        transform: translate(0px);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(200px);
+        opacity: 0;
+    }
+}
+
+#anim3 {
+    animation: logo3 2s linear infinite;
+}
+
+@keyframes logo4 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(50px);
+    }
+
+    50% {
+        transform: translate(0px);
+    }
+
+    75% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#anim4 {
+    margin-top: 60px;
+    animation: logo4 2s linear infinite;
+}
+
+@keyframes logo5 {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        left: 0;
+        top: 100px;
+    }
+
+    50% {
+        left: 100px;
+        top: 100px;
+    }
+
+    75% {
+        left: 100px;
+        top: 0;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+#anim5 {
+    position: relative;
+    animation: logo5 2s linear infinite;
+}
+
+
+
+#seventh {
+    margin-top: 150px;
+}
+
+#seventh p {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    border: 2px solid black;
+}
+
+#seventh p:hover {
+    color: #ff0000;
+    transition: color 5s linear;
+}
+
+
+
+@keyframes hs {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+h2 {
+    animation: hs 1s linear infinite;
+}

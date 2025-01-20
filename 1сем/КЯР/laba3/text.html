@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виды акул</title>
+    <style>
+        @font-face 
+        {
+            font-family:'Caveat';
+            src: url('fonts/Caveat.woff') format('woff');
+        }
+        h1
+        {
+            font-family:'Caveat';
+            text-align: center;
+            font-weight: bold;
+            padding-left: 0px;
+            margin-left: 0px;
+            font-size: 45px;
+            text-transform: small-caps;
+            text-shadow: 10px 10px 10px;
+        }
+        @font-face 
+        {
+            font-family:'Exo2';
+            src: url('fonts/Exo2.woff') format('woff');
+        }
+        h2
+        {
+            font-family: 'Exo2';
+            text-align: left;
+            text-indent: 25px;
+            margin-top: 0.2rem;
+            margin-bottom: 1.2em;
+        }
+        @font-face 
+        {
+            font-family: 'Comfortaa';
+            src: url('fonts/Comfortaa.woff') format('woff');
+        }  
+        p
+        {
+            font-family: 'Comfortaa';
+            text-align: justify;
+            text-indent: 25px;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 200%;
+            font-size: 20px;
+        } 
+        p::first-letter
+        {
+            color: white;
+            font-size: 45px;
+            font-weight: bold;
+            background-color: hsla(275, 100%, 10%, 1);
+        }
+        ol li
+        {
+            list-style-type: none;
+            counter-increment: item;
+            font-family: 'Comfortaa';
+            color: black;
+            font-size: 20px;
+        }
+        li::before
+        {
+            content: counter(item, upper-roman) ".";
+            color:blue;
+        }
+        h2 span
+        {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        div+p::first-letter
+        {
+            color: black;
+            background-color: white;
+            font-weight: normal;
+        }
+        #shark::first-line
+        {
+            text-indent: 25px;
+            font-family: 'Comfotaa';
+            font-size: 20px;
+            color:red;
+        }
+        </style>
+</head>
+<body>
+    <h1>Акулы, их семейства и виды</h1>
+    <h2>Семейство плащеносные акулы</h2>
+    <p>Плащеносная акула (Chlamydoselachus anguineus) не даром занимает одно из первых мест в рейтинге самых интересных рыб. Это опасное существо также заслуженно считается царем подводного мира.</p>
+    <p>Благодаря странному «воротничку», длинному стройному телу и змееподобной голове, она похожа скорее на рептилию. Единственный вид плащеносной акулы был найден в прибрежных водах Японии и Восточной Атлантики. Эта акула является глубоководной и питается осьминогами. Она яйцеживородящая. Внутриутробное развитие детёныша длится два года. Самый большой из представителей этого семейства достигал 2 метров в длину.</p>
+    <h2>Семейство песчаные акулы</h2>
+    <p>Австралийская песчаная акула – одна из самых опасных акул в мировом океане. Её длина достигает 4,5 метров. Зубы идут во много рядов, длинные, тонкие и загибаются внутрь. Её ближайшая родственница – песчаная акула с быстротой молнии пускающая в ход свои зубы вялая и медлительная. Встречаются песчаные акулы в Атлантическом океане, Средиземное море, у берегов Западной, Южной и Восточной Африки, по всему побережью Северной Америки.</p>
+    <h2><span>Другие виды акул</span></h2>
+    <ol>
+        <li>Молотоголовая акула </li>
+        <li>Пятнистая шорная акула</li>
+        <li>Чёрная колючая акула</li>
+        <li>Китовая акула</li>
+        <li>Большая белая акула</li>
+    </ol>
+    <div>
+        <p id = 'shark'>Акулы — это удивительные существа, представляющие разнообразие форм и адаптаций, которые помогают им выживать в самых разных условиях. Несмотря на то что многие виды акул наделены опасной репутацией, большинство из них не представляют угрозы для человека и играют важную роль в морских экосистемах.</p>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="/laba12/task1.css"?>
+<!DOCTYPE items 
+[
+<!ELEMENT head (title, byn)>
+<!ELEMENT item (name,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT byn (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ENTITY b "BYN">
+]
+>
+<items>
+    <head>
+        <title>Название товара</title>
+        <byn>Цена</byn>
+    </head>
+    <item>
+        <name>Шарф</name>
+        <price>30 &b;</price>
+    </item>
+
+    <item>
+        <name>Штаны</name>
+        <price>60 &b;</price>
+    </item>
+
+    <item>
+        <name>Пальто</name>
+        <price>500 &b;</price>
+    </item>
+
+    <item>
+        <name>Перчатки</name>
+        <price>40 &b;</price>
+    </item>
+
+    <item>
+        <name>Худи</name>
+        <price>90 &b;</price>
+    </item>
+</items>  

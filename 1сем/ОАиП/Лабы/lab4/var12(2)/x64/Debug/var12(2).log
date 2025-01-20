@@ -1,0 +1,4 @@
+﻿  var12(2).cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(755,5): warning MSB8015: все исходные файлы устарели — принудительно повторяется сборка всех исходных файлов, так как содержимое "C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba4\var12(2)\x64\Debug\var12(2).tlog\CL.command.1.tlog" недопустимо.
+  LINK : не найден или не выполнена сборка C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba4\x64\Debug\var12(2).exe при последней инкрементной компоновке; выполняется полная компоновка
+  var12(2).vcxproj -> C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba4\x64\Debug\var12(2).exe

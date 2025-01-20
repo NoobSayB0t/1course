@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="/laba12/task1.css"?>
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doptask3.xsd">
+    <head>
+        <title>Название товара</title>
+        <byn>Цена</byn>
+    </head>
+    <item>
+        <name>Шарф</name>
+        <price>30 BYN</price>
+    </item>
+
+    <item>
+        <name>Штаны</name>
+        <price>60 BYN</price>
+    </item>
+
+    <item>
+        <name>Пальто</name>
+        <price>500 BYN</price>
+    </item>
+
+    <item>
+        <name>Перчатки</name>
+        <price>40 BYN</price>
+    </item>
+
+    <item>
+        <name>Худи</name>
+        <price>90 BYN</price>
+    </item>
+</items>  

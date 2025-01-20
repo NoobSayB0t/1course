@@ -1,0 +1,6 @@
+﻿  task7(2).cpp
+C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba5\task7(2)\task7(2).cpp(4,12): warning C4101: m: неиспользованная локальная переменная
+C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba5\task7(2)\task7(2).cpp(4,6): warning C4101: k: неиспользованная локальная переменная
+C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba5\task7(2)\task7(2).cpp(4,9): warning C4101: l: неиспользованная локальная переменная
+C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba5\task7(2)\task7(2).cpp(4,15): warning C4101: n: неиспользованная локальная переменная
+  task7(2).vcxproj -> C:\Users\USER\Desktop\ОАИП\lab3\lab3\laba5\x64\Debug\task7(2).exe

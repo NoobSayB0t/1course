@@ -1,0 +1,5 @@
+﻿  zad3.cpp
+C:\Users\USER\Desktop\ОАИП\lab6\zad3\zad3.cpp(5,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\USER\Desktop\ОАИП\lab6\zad3\zad3.cpp(9,9): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\USER\Desktop\ОАИП\lab6\zad3\zad3.cpp(13,9): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  zad3.vcxproj -> C:\Users\USER\Desktop\ОАИП\lab6\x64\Debug\zad3.exe

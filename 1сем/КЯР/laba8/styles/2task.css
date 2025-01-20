@@ -1,0 +1,20 @@
+nav {
+    width: 100%;
+    text-align: center;
+}
+.menuitem {
+    display: inline-block;
+    background-color: yellow;
+    border: 1px solid green;
+    border-right: none;
+    margin-right: -4px;
+}
+.menuitem:last-child {
+    border: 1px solid green;
+}
+.menulink {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: green;
+}
