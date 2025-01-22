@@ -1,34 +1,35 @@
 #include <iostream>
 #include <math.h>
 #include <windows.h>
-#include <cmath> // Для математических функций
+#include <cmath>
 #include <iomanip>
 #include <vector>
 
 using namespace std;
+
 #define PLAIN_WIDTH 129
 #define PLAIN_HEIGHT 65
 #define PI 3.14159265358979323846
 
 char plain[PLAIN_HEIGHT][PLAIN_WIDTH];
 
-// Функции
+// Р¤СѓРЅРєС†РёРё
 void printPlain(char* arrayStart);
 void drawFunction(double (*func)(double), char symbol, double x_start, double x_end);
 double cube(double x);
 double squareFunc(double x);
 double ctg(double x);
 
-// Функция для ввода чисел
+// Р¤СѓРЅРєС†РёСЏ РґР»СЏ РІРІРѕРґР° С‡РёСЃРµР»
 vector<double> inputNumbers() {
     int count;
     double temp;
     vector<double> numbers;
 
-    cout << "Сколько чисел вы хотите ввести? ";
+    cout << "РЎРєРѕР»СЊРєРѕ С‡РёСЃРµР» РІС‹ С…РѕС‚РёС‚Рµ РІРІРµСЃС‚Рё? ";
     cin >> count;
 
-    cout << "Введите числа: ";
+    cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Р°: ";
     for (int i = 0; i < count; i++) {
         cin >> temp;
         numbers.push_back(temp);
@@ -36,32 +37,32 @@ vector<double> inputNumbers() {
     return numbers;
 }
 
-// Главная функция
+// Р“Р»Р°РІРЅР°СЏ С„СѓРЅРєС†РёСЏ
 void mainMenu() {
-    setlocale(LC_CTYPE, "Russian"); 
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
+    setlocale(LC_CTYPE, "Russian");
+    SetConsoleCP(65001); // РЈСЃС‚Р°РЅР°РІР»РёРІР°РµРј РєРѕРґРёСЂРѕРІРєСѓ UTF-8
+    SetConsoleOutputCP(65001);
 
     int modeChoice;
     do {
-        cout << "\n=== Главное меню ===" << endl;
-        cout << "1. Научный калькулятор" << endl;
-        cout << "2. Построение графиков функций" << endl;
-        cout << "0. Выход" << endl;
-        cout << "Выберите режим: ";
+        cout << "\n=== Р“Р»Р°РІРЅРѕРµ РјРµРЅСЋ ===" << endl;
+        cout << "1. РќР°СѓС‡РЅС‹Р№ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ" << endl;
+        cout << "2. РџРѕСЃС‚СЂРѕРµРЅРёРµ РіСЂР°С„РёРєРѕРІ С„СѓРЅРєС†РёР№" << endl;
+        cout << "0. Р’С‹С…РѕРґ" << endl;
+        cout << "Р’С‹Р±РµСЂРёС‚Рµ СЂРµР¶РёРј: ";
         cin >> modeChoice;
 
         if (modeChoice == 1) {
-            // Логика калькулятора
+            // Р›РѕРіРёРєР° РєР°Р»СЊРєСѓР»СЏС‚РѕСЂР°
             int choice;
             double result;
             vector<double> numbers;
 
             do {
-                cout << "\n===== Калькулятор =====" << endl;
-                cout << "1. Сложение\n2. Вычитание\n3. Умножение\n4. Деление\n5. Степень\n6. Квадратный корень\n";
-                cout << "7. Синус\n8. Косинус\n9. Тангенс\n10. Логарифм\n0. Назад" << endl;
-                cout << "Выберите операцию: ";
+                cout << "\n===== РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ =====" << endl;
+                cout << "1. РЎР»РѕР¶РµРЅРёРµ\n2. Р’С‹С‡РёС‚Р°РЅРёРµ\n3. РЈРјРЅРѕР¶РµРЅРёРµ\n4. Р”РµР»РµРЅРёРµ\n5. РЎС‚РµРїРµРЅСЊ\n6. РљРІР°РґСЂР°С‚РЅС‹Р№ РєРѕСЂРµРЅСЊ\n";
+                cout << "7. РЎРёРЅСѓСЃ\n8. РљРѕСЃРёРЅСѓСЃ\n9. РўР°РЅРіРµРЅСЃ\n10. Р›РѕРіР°СЂРёС„Рј\n0. РќР°Р·Р°Рґ" << endl;
+                cout << "Р’С‹Р±РµСЂРёС‚Рµ РѕРїРµСЂР°С†РёСЋ: ";
                 cin >> choice;
 
                 switch (choice) {
@@ -69,21 +70,20 @@ void mainMenu() {
                 case 2: numbers = inputNumbers(); result = numbers[0]; for (size_t i = 1; i < numbers.size(); i++) result -= numbers[i]; break;
                 case 3: numbers = inputNumbers(); result = 1; for (double num : numbers) result *= num; break;
                 case 4: numbers = inputNumbers(); result = numbers[0]; for (size_t i = 1; i < numbers.size(); i++) result /= numbers[i]; break;
-                case 5: { double base, exp; cout << "Введите число и степень: "; cin >> base >> exp; result = pow(base, exp); } break;
-                case 6: cout << "Введите число: "; cin >> result; result = sqrt(result); break;
-                case 7: cout << "Введите угол (градусы): "; cin >> result; result = sin(result * PI / 180); break;
-                case 8: cout << "Введите угол (градусы): "; cin >> result; result = cos(result * PI / 180); break;
-                case 9: cout << "Введите угол (градусы): "; cin >> result; result = tan(result * PI / 180); break;
-                case 10: cout << "Введите число: "; cin >> result; result = log(result); break;
+                case 5: { double base, exp; cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ Рё СЃС‚РµРїРµРЅСЊ: "; cin >> base >> exp; result = pow(base, exp); } break;
+                case 6: cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: "; cin >> result; result = sqrt(result); break;
+                case 7: cout << "Р’РІРµРґРёС‚Рµ СѓРіРѕР» (РіСЂР°РґСѓСЃС‹): "; cin >> result; result = sin(result * PI / 180); break;
+                case 8: cout << "Р’РІРµРґРёС‚Рµ СѓРіРѕР» (РіСЂР°РґСѓСЃС‹): "; cin >> result; result = cos(result * PI / 180); break;
+                case 9: cout << "Р’РІРµРґРёС‚Рµ СѓРіРѕР» (РіСЂР°РґСѓСЃС‹): "; cin >> result; result = tan(result * PI / 180); break;
+                case 10: cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ: "; cin >> result; result = log(result); break;
                 case 0: continue;
-                default: cout << "Ошибка ввода!" << endl; continue;
+                default: cout << "РћС€РёР±РєР° РІРІРѕРґР°!" << endl; continue;
                 }
-                cout << "Результат: " << result << endl;
+                cout << "Р РµР·СѓР»СЊС‚Р°С‚: " << result << endl;
             } while (choice != 0);
 
-        }
-        else if (modeChoice == 2) {
-            // Логика построения графиков
+        } else if (modeChoice == 2) {
+            // Р›РѕРіРёРєР° РїРѕСЃС‚СЂРѕРµРЅРёСЏ РіСЂР°С„РёРєРѕРІ
             for (int y = 0; y < PLAIN_HEIGHT; y++) {
                 for (int x = 0; x < PLAIN_WIDTH; x++) {
                     plain[y][x] = '.';
@@ -93,16 +93,16 @@ void mainMenu() {
             }
 
             int choice;
-            cout << "Сколько функций вы хотите видеть? (до 5): ";
+            cout << "РЎРєРѕР»СЊРєРѕ С„СѓРЅРєС†РёР№ РІС‹ С…РѕС‚РёС‚Рµ РІРёРґРµС‚СЊ? (РґРѕ 5): ";
             cin >> choice;
 
             for (int i = 0; i < choice; i++) {
                 string funcName;
                 char symbol;
 
-                cout << "Введите функцию (cos, sin, tg, ctg, log, abs, square, cube): ";
+                cout << "Р’РІРµРґРёС‚Рµ С„СѓРЅРєС†РёСЋ (cos, sin, tg, ctg, log, abs, square, cube): ";
                 cin >> funcName;
-                cout << "Символ для графика: ";
+                cout << "РЎРёРјРІРѕР» РґР»СЏ РіСЂР°С„РёРєР°: ";
                 cin >> symbol;
 
                 if (funcName == "cos") drawFunction(cos, symbol, -PI, PI);
@@ -113,22 +113,23 @@ void mainMenu() {
                 else if (funcName == "abs") drawFunction(abs, symbol, -10, 10);
                 else if (funcName == "square") drawFunction(squareFunc, symbol, -10, 10);
                 else if (funcName == "cube") drawFunction(cube, symbol, -10, 10);
-                else cout << "Функция не поддерживается!" << endl;
+                else cout << "Р¤СѓРЅРєС†РёСЏ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ!" << endl;
             }
             printPlain(&(plain[0][0]));
         }
 
     } while (modeChoice != 0);
 
-    cout << "До свидания!" << endl;
+    cout << "Р”Рѕ СЃРІРёРґР°РЅРёСЏ!" << endl;
 }
 
 int main() {
     mainMenu();
+    setlocale(LC_CTYPE, "Russian");
     return 0;
 }
 
-// Дополнительные функции
+// Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ С„СѓРЅРєС†РёРё
 void printPlain(char* arrayStart) {
     int i = 1;
     while (i <= PLAIN_WIDTH * PLAIN_HEIGHT) {
